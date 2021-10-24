@@ -226,5 +226,131 @@ header {
      ;
   
 }
+#answerCorrectWrongGrid {
+    /*width:65%; /* Contain the grid to a maximum of 80% of the flex wrapper */
+    display: grid;
+    grid-template-columns: 4fr;  /* 4X4 grid of same size*/
+    grid-template-rows: repeat(2, 1fr); /* 4 rows of equal size */
+    gap: 10px 10px;
+    font-family: 'Times New Roman', Times, serif;font-size: 22px;
 
+}
+
+#answerCorrectWrong {
+    text-align: left;
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+    
+}
+
+
+/* Screen smaller than 768px */
+@media screen and (max-width: 768px) {
+
+
+    
+    #answer1:hover{
+        
+        background-color: rgb(0, 30, 128);
+        
+    }
+
+    #answer2:hover{
+        
+        background-color:rgb(0, 30, 128);
+    
+    }
+
+    #answer3:hover{
+        
+        background-color:rgb(0, 30, 128);
+    
+    }
+
+    #answer4:hover{
+        
+        background-color:rgb(0, 30, 128);
+    
+    }
+
+    #submitScore:hover{
+        
+        background-color:rgb(0, 30, 128);
+    
+    }
+
+
+
+    #questionDisplay {
+        font-size: 25px;
+    }
+    
+    #answer1 {
+        grid-column: 2 / span 2;
+    }
+    
+    #answer2 {
+        grid-column: 2 / span 2;
+           
+    }
+    
+    #answer3 {
+        grid-column: 2 / span 2;
+    }
+    
+    #answer4 {
+        grid-column: 2 / span 2;
+    }
+    
+  
+
+}
+
+
+   /* Screen smaller than 575px */
+@media screen and  (max-width: 575px) {
+
+    #answer1:hover{
+        
+        background-color: purple;
+        
+    }
+
+    #answer2:hover{
+        
+        background-color: purple;
+    
+    }
+
+    #answer3:hover{
+        
+        background-color: purple;
+    
+    }
+
+    #answer4:hover{
+        
+        background-color: purple;
+    
+    }
+
+    #submitScore:hover{
+        
+        background-color: purple;
+    
+    }
+
+
+    #mainDiv {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #questionDisplay {
+        grid-column: 2 / span 2;
+        font-size: 15px;
+    }
+  
+
+  }
 
